@@ -1,0 +1,17 @@
+.col {
+  font-family: "Lato", sans-serif
+}
+
+.resumeName{
+  font-size: 25px;
+  text-align: center;
+}
+
+.ml-auto{
+  display: flex;
+  justify-content: center;
+}
+
+#text{
+  font-size: 1;
+}

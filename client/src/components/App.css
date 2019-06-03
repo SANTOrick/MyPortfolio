@@ -1,0 +1,108 @@
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://www.w3schools.com/w3css/4/w3.css");
+
+body {
+  margin: 0;
+  background-color: #232323;
+  color: #fff;
+  font-family: "Lato", sans-serif
+}
+
+.ml-auto{
+  display: flex;
+  justify-content: center;
+}
+
+
+.center{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    width: 70%;
+    font-size: 30px;
+    display: block;
+    text-align: center;
+}
+
+.char{
+    font-size: 25px;
+    height: 20px;
+    animation: an 2s ease-out 1s both;
+    display: inline-block;
+}
+
+@keyframes an{
+    from{
+        opacity: 0;
+        transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+.mylink{
+  position: absolute;
+  z-index: 150;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  padding: .6rem;
+}
+
+.mylink a{
+  font-family: Calibri;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  opacity: .5;
+  transition: opacity .3s;
+  text-decoration: none
+}
+.mylink a:hover{
+  color: blue;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+
+.itemForm {
+  margin-top: 10%;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 1vmin);
+  margin-bottom: -21%;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+ul a {
+  font-family: "Lato", sans-serif;
+  display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 16px;
+ margin-right: 13%;
+ text-decoration: none;
+}
+
+ul a:hover{
+  color: blue;
+}

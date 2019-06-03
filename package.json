@@ -1,5 +1,5 @@
 {
-  "name": "reactexpress",
+  "name": "boilerplate",
   "version": "1.0.0",
   "description": "Starter kit for creating React and Express apps",
   "main": "server.js",
@@ -10,13 +10,26 @@
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "Brad Traversy",
+  "author": "Riccardo Donati",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^1.14.6"
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "concurrently": "^3.5.1",
-    "express": "^4.16.2"
-  }
+    "express": "^4.16.2",
+    "mysql": "^2.17.1",
+    "react-router-dom": "^5.0.0",
+    "reactstrap": "^8.0.0",
+    "typekit": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SANTO/rick/node_express_app"
+  },
+  "bugs": {
+    "url": "https://github.com/SANTO/rick/node_express_app"
+  },
+  "homepage": "https://github.com/SANTO/rick/node_express_app#readme"
 }
