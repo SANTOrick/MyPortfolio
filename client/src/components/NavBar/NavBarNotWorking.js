@@ -2,8 +2,6 @@ import React from 'react'
 import  '../App.css'
 import  NavButton from './NavButton'
 
-import { BrowserRouter, Switch, Route, withRouter } from "react-router-dom";
-import { Collapse, NavbarToggler } from "reactstrap";
 
 
 export default class NavBar extends React.Component{

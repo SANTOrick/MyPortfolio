@@ -8,7 +8,7 @@ import ErrorPage from './ErrorPage/ErrorPage'
 import SuccessPage from './SuccessPage/SuccessPage'
 import Footer from './Footer/Footer'
 import  './App.css'
-import { BrowserRouter, Switch, Redirect, Route, withRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route} from "react-router-dom";
 
 export default class App extends React.Component {
   constructor(){

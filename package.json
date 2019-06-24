@@ -19,7 +19,9 @@
     "bootstrap": "^4.3.1",
     "concurrently": "^3.5.1",
     "express": "^4.16.2",
+    "morgan": "^1.9.1",
     "mysql": "^2.17.1",
+    "react-pdf": "^4.1.0",
     "react-router-dom": "^5.0.0",
     "reactstrap": "^8.0.0",
     "typekit": "^0.1.1"

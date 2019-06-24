@@ -65,7 +65,7 @@ export default class Resume extends React.Component {
         ) : null}
         {this.state.imageId === 2 ? (
           <div className="project">
-            <h2>E-commerce</h2>
+            <h2>Project#2</h2>
             <p id="text-resume">dsa</p>
           </div>
         ) : null}

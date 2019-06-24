@@ -1,10 +1,7 @@
 import React from 'react';
-import ErrorPage from '../ErrorPage/ErrorPage'
-import SuccessPage from '../SuccessPage/SuccessPage'
 import ContactForm from './ContactForm'
 
-import { BrowserRouter, Switch, Redirect, Route, withRouter } from "react-router-dom";
-import { Button, Form, Col, Row, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { BrowserRouter, Switch } from "react-router-dom";
 // import API from "./Api";
 
 export default class Contact extends React.Component {
@@ -29,22 +26,24 @@ export default class Contact extends React.Component {
   }
 
   handleRequest = serverRequest => {
-    fetch("http://localhost:3001/contacts", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(serverRequest)
-    }).then(resp=>{
-      this.setState({ response: resp.status })
-    })
+      this.setState({ response: true })
+
   }
 
   render() {
     return (
+      <div>
+      {
+        this.state.response
+        ?<p style={{color:"green", marginTop:"-5%"}}>Message submitted, Thank You!</p>
+        :null
+      }
       <BrowserRouter>
       <ContactForm handleSubmit={this.handleSubmit}/>
       <Switch>
       </Switch>
       </BrowserRouter>
+      </div>
     );
   }
 }

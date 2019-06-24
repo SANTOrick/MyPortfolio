@@ -1,6 +1,6 @@
 import React from 'react'
 import { Document, Page } from "react-pdf";
-import resume from "./resume.pdf"
+import resume from "./Resume.pdf"
 export default class Resume extends React.Component{
   constructor(){
     super()
@@ -25,15 +25,15 @@ export default class Resume extends React.Component{
 
 
   render(){
-    const { pageNumber, numPages } = this.state;
+    const { pageNumber } = this.state;
     return(
       <div className="resume">
-         <Document 
+         <Document onLoadError={console.error}
           file={resume} 
           onLoadSuccess={this.onDocumentLoadSuccess}
         >
           <div className="pdf">
-         <Page pageNumber={pageNumber} style={{style: "position: unset"}}/>
+         <Page onLoadError={console.error} pageNumber={pageNumber} style={{style: "position: unset"}}/>
          </div>
         </Document>
       </div>

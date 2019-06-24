@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container, Row, Col } from 'reactstrap';
 
 import './Landing.css'
 
@@ -10,7 +9,7 @@ export default class Landing extends React.Component {
     var animationDelay = 6;
     for(let i = 0; i < text.innerText.length; i++)
     {
-        newDom += '<span class="char">' + (text.innerText[i] == ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
+        newDom += '<span class="char">' + (text.innerText[i] === ' ' ? '&nbsp;' : text.innerText[i])+ '</span>';
     }
     text.innerHTML = newDom;
     var length = text.children.length;

@@ -1,17 +1,13 @@
 const express = require('express');
-
+const db = require('./db.json')
 const app = express();
 
-app.get('/api/customers', (req, res) => {
-  const customers = [
-    {id: 1, firstName: 'John', lastName: 'Doe'},
-    {id: 2, firstName: 'Brad', lastName: 'Traversy'},
-    {id: 3, firstName: 'Mary', lastName: 'Swanson'},
-  ];
-
-  res.json(customers);
+app.post('/api/contacts', (req, res) => {
+  console.log(req.body)
+  db.contacts[0].type.push(req.body)
+  res.json();
 });
 
-const port = 5000;
+const port = 5001;
 
 app.listen(port, () => `Server running on port ${port}`);
