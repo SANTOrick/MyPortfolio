@@ -1,5 +1,4 @@
 import React from 'react';
-import "../App.css"
 import ErrorPage from '../ErrorPage/ErrorPage'
 import SuccessPage from '../SuccessPage/SuccessPage'
 import ContactForm from './ContactForm'

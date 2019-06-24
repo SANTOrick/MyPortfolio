@@ -1,6 +1,5 @@
 import React from 'react'
 import NavButton from './NavButton'
-import  '../App.css'
 
 import { Collapse, NavbarToggler } from "reactstrap";
 

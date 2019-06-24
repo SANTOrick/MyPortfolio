@@ -1,7 +1,5 @@
 import React from 'react';
-import "../App.css"
 
-import { Redirect, Route } from 'react-router-dom'
 import { Button, Form, Col, Row, FormGroup, Label, Input, FormText } from 'reactstrap';
 // import API from "./Api";
 

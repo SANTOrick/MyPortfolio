@@ -5,9 +5,11 @@
 
 body {
   margin: 0;
-  background-color: #232323;
-  color: #fff;
-  font-family: "Lato", sans-serif
+  background-color: #f6f4f4	;
+  color: black;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 .ml-auto{
@@ -15,13 +17,20 @@ body {
   justify-content: center;
 }
 
+.nav{
+  background-color: #44aaac;
+  position: fixed;
+  top: 0px;
+  padding: 1%;
+
+}
 
 .center{
     width: 100%;
-    height: 25vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100%;
 }
 
 p{
@@ -60,14 +69,14 @@ p{
 
 .mylink a{
   font-family: Calibri;
-  color: #fff;
+  color: black;
   border-bottom: 1px solid #fff;
   opacity: .5;
   transition: opacity .3s;
   text-decoration: none
 }
 .mylink a:hover{
-  color: blue;
+  color: #adba44;
 }
 
 ul {
@@ -81,7 +90,7 @@ ul {
 
 
 .itemForm {
-  margin-top: 10%;
+  margin-top: 25%;
   min-height: 45vh;
   display: flex;
   flex-direction: column;
@@ -89,14 +98,14 @@ ul {
   justify-content: center;
   font-size: calc(7px + 1vmin);
   margin-bottom: -21%;
-  color: white;
+  color: black;
   font-family: "Lato", sans-serif;
 }
 
 ul a {
   font-family: "Lato", sans-serif;
   display: block;
- color: white;
+ color: black;
  text-align: center;
  padding: 14px 16px;
  margin-right: 13%;
@@ -104,5 +113,203 @@ ul a {
 }
 
 ul a:hover{
-  color: blue;
+  color: #adba44;
+}
+
+/* footer */
+.footer-distributed{
+	box-shadow: 4px 4px 1px 0 rgba(0, 0, 0, 0.52);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: "lato" 16px sans-serif;
+	padding: 1%;
+  background-color: #44aaac;
+  position: fixed;
+  bottom: 0;
+
+}
+
+.footer-distributed .footer-right p{
+	color:  black;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+
+.fa-linkedin:hover{
+	color: #adba44;
+}
+
+.fa-facebook:hover{
+	color: #adba44;
+}
+
+.fa-twitter:hover{
+	color: #adba44;
+}
+
+.fa-github:hover{
+	color: #adba44;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	margin-right: 10px;
+}
+
+.footer-distributed .footer-center{
+	float: center;
+	margin-top: 6px;
+}
+
+.footer-distributed .footer-center a{
+	display: inline-block;
+	width: 5%;
+	height: 35px;
+	border-radius: 2px;
+	font-size: 20px;
+	color: black;
+	line-height: 35px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-right,
+	.footer-distributed .footer-center{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-right p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+/* Projects */
+
+img {
+  margin-left: 21%;
+  width: 29%;
+  display: inline;
+  vertical-align: middle;
+}
+
+p {
+  text-align: center;
+  width: 70%;
+  font-size: 25px;
+  margin-left: 16%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-variant: small-caps;
+}
+
+p#text {
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+/* Resume */
+
+.resume{
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.project{
+  display: -webkit-inline-box
+}
+
+p#text-resume{
+  width: 50%;
+    margin: 2%;
+    margin-top: -3%;
+    text-align: justify;
+}
+
+.resumeName{
+  font-size: 25px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  width: 70%;
+  font-size: 25px;
+  margin-left: 16%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  font-family: "Lato", sans-serif;
+  font-variant: small-caps;
+}
+
+.react-pdf__Page__canvas{
+  width: 150%;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  margin-top: 20%;
+  margin-bottom: 20%
+}
+
+.react-pdf__Page{
+  margin-top: 20%;
+  display: contents;
+}
+
+/* Error */
+
+#header-text {
+  color: rgb(33, 37, 41);
+  background-color: #232323;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 25px;
+  display: grid;
+  grid-auto-flow: dense;
+  text-align: justify;
+  justify-items: center;
+}
+
+#code{
+  font-size: 125px;
+}
+
+/* landing */
+.col {
+  font-family: "Lato", sans-serif
+}
+
+.ml-auto{
+  display: flex;
+  justify-content: center;
+}
+
+#text{
+  font-size: 1;
+  margin-top: 20%;
+
 }

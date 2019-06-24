@@ -29,6 +29,11 @@ export default class NavBar extends React.Component{
               key={"Resume"}
             />
             <NavButton
+              route={"/projects"}
+              action={"Projects"}
+              key={"Projects"}
+            />
+            <NavButton
               route={"/contact"}
               action={"Contact"}
               key={"Contact"}

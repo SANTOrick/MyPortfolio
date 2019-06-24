@@ -1,5 +1,4 @@
 import React from "react";
-import "./ErrorPage.css";
 
 const SuccessPage = () => {
   return (
@@ -9,7 +8,6 @@ const SuccessPage = () => {
           <a href="/">
             <button
               className="btn btn-lg btn-outline-primary"
-              style={{ marginTop: "40px", marginBottom: "40px" }}
             >
               Continue to homepage
             </button>
